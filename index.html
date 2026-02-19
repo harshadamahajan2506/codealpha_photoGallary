@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Photography Gallery</h1>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="floral">Floral</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="floral"><img src="https://th.bing.com/th/id/OIP.61yl2aGDLtfzJORcWaZbagHaEo?w=275&h=180&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3" alt="Floral 1"></div>
+        <div class="gallery-item" data-category="floral"><img src="https://tse3.mm.bing.net/th/id/OIP.IReLmQn3sp_3JqaxorByJQHaM9?cb=defcachec2&pid=ImgDet&w=187&h=327&c=7&dpr=1.3&o=7&rm=3" alt="Floral 2"></div>
+        <div class="gallery-item" data-category="floral"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1000&auto=format&fit=crop" alt="Floral 3"></div>
+        <div class="gallery-item" data-category="floral"><img src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?q=80&w=1000&auto=format&fit=crop" alt="Floral 4"></div>
+        <div class="gallery-item" data-category="floral"><img src="https://images.unsplash.com/photo-1507290439931-a861b5a38200?q=80&w=1000&auto=format&fit=crop" alt="Floral 5"></div>
+
+        <div class="gallery-item" data-category="nature"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop" alt="Nature 1"></div>
+        <div class="gallery-item" data-category="nature"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop" alt="Nature 2"></div>
+        <div class="gallery-item" data-category="nature"><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop" alt="Nature 3"></div>
+        <div class="gallery-item" data-category="nature"><img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=1000&auto=format&fit=crop" alt="Nature 4"></div>
+        <div class="gallery-item" data-category="nature"><img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Nature 5"></div>
+
+        <div class="gallery-item" data-category="cinematic"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1000&auto=format&fit=crop" alt="Cinematic 1"></div>
+        <div class="gallery-item" data-category="cinematic"><img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1000&auto=format&fit=crop" alt="Cinematic 2"></div>
+        <div class="gallery-item" data-category="cinematic"><img src="https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Cinematic 3"></div>
+        <div class="gallery-item" data-category="cinematic"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1000&auto=format&fit=crop" alt="Cinematic 4"></div>
+        <div class="gallery-item" data-category="cinematic"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1000&auto=format&fit=crop" alt="Cinematic 5"></div>
+    </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+        <span class="close-lightbox" id="closeBtn">&times;</span>
+        <button class="nav-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <img src="" class="lightbox-img" id="lightboxImg">
+        <button class="nav-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
